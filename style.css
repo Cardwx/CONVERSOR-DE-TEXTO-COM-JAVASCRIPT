@@ -1,0 +1,25 @@
+*{
+margin: 0;
+padding: 0;
+}
+.container {  display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    row-gap: 220px;
+    gap: 7px 14px;
+    grid-auto-flow: row;
+}
+#text-input{
+    background-color: antiquewhite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.texto{
+    padding: 20px;
+    width: 800px;
+    height: 300px;
+    border-radius: 10px;
+    outline: none;
+}
