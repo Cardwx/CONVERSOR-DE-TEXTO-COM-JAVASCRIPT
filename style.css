@@ -16,7 +16,15 @@ padding: 0;
     align-items: center;
     flex-direction: column;
 }
-.texto{
+#texto{
+    padding: 20px;
+    width: 800px;
+    height: 300px;
+    border-radius: 10px;
+    outline: none;
+}
+
+.texto-convertido{
     padding: 20px;
     width: 800px;
     height: 300px;
