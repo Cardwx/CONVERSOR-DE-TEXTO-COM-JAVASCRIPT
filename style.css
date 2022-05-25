@@ -2,32 +2,58 @@
 margin: 0;
 padding: 0;
 }
+
+/*
+    Identação e formatação dos textos
+*/
+.title-convert{
+    display: flex;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   flex-direction: row;
+   padding: 20px;
+}
+
+/*                              */
 .container {  display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr;
-    row-gap: 220px;
-    gap: 7px 14px;
-    grid-auto-flow: row;
 }
 #text-input{
-    background-color: antiquewhite;
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
+    align-items: center;
 }
 #texto{
+    display: flex;
+    flex-direction: column;
     padding: 20px;
     width: 800px;
     height: 300px;
     border-radius: 10px;
     outline: none;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    text-align: center;
 }
 
-.texto-convertido{
+                        /* Formatação dos buttons*/
+.buttons{
     padding: 20px;
-    width: 800px;
-    height: 300px;
+}
+
+.btn-mai, .btn-min, .btn-clear, .btn-prim{
+    background-image: linear-gradient(to right, #6057e6, #7a5083);
+    border: 1px solid  white;
+    width: 250px;
+    height: 50px;
     border-radius: 10px;
-    outline: none;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    cursor: pointer;
+    font-size: 20px;
+    color: aliceblue;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(to right, #6057e6, #7a5083);
 }

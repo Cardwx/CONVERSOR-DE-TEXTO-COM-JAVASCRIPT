@@ -12,18 +12,17 @@
     <div class="container">
         <div id="text-input"> 
             <h1 class="title-convert">Digite o seu texto aqui para ser convertido</h1>
-            <p>As opçoes para conversão de texto são: Alterar todo o texto digitado para maiúsculo, alterar todo o texto digitado para minúsculo, alterar apenas as primeiras letras para maiúsculo:</p>
-            <form class="form"> 
-            <textarea name="texto" id="texto" >
+           
+            <textarea name="texto" id="texto"  placeholder="Insira o texto a ser convertido">
             </textarea>
             </form>
             <div class="buttons">
                 <input type="button" value="Maiúsculo" class="btn-mai" onclick="maiusculo()"/>
                 <input type="button" value="Minúsculo" class="btn-min" onclick="minusculo()"/>
+                <input type="button" value="Primeira Letra Maiúsculo" class="btn-prim" onclick="primeiraLetra()"/>
                 <input type="button" value="Limpar" class="btn-clear" onclick="limpeza()"/>
             </div>
         </div>
-        
       </div>
       
 </body>
