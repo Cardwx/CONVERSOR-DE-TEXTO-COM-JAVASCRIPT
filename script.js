@@ -48,6 +48,7 @@ function  limpeza(){
 }
 
 // função para converter a primeira letra para maiúscula
+
 function  primeiraLetra(){
     const  texto = document.querySelector('#texto').value
 

@@ -15,8 +15,8 @@ padding: 0;
 
 /*                              */
 .container {  display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 2fr ;
+    grid-template-rows: 1fr 1fr ;
 }
 #text-input{
     display: flex;
@@ -25,9 +25,8 @@ padding: 0;
 }
 #texto{
     display: flex;
-    flex-direction: column;
     padding: 20px;
-    width: 800px;
+    width: 900px;
     height: 300px;
     border-radius: 10px;
     outline: none;
@@ -38,6 +37,7 @@ padding: 0;
 
                         /* Formatação dos buttons*/
 .buttons{
+    flex-wrap: wrap;
     padding: 20px;
 }
 
@@ -56,4 +56,13 @@ body{
     display: flex;
     flex-direction: column;
     background-image: linear-gradient(to right, #6057e6, #7a5083);
+}
+
+
+
+@media screen and (min-width: 500px){
+    .buttons{
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
 }
