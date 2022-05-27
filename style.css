@@ -41,7 +41,7 @@ padding: 0;
 .buttons{
     padding: 20px;
     display: flex;
-    border: 1px solid black;
+
 }
 
 .btn-mai, .btn-min, .btn-clear, .btn-prim{
@@ -93,4 +93,8 @@ body{
 /* Media query para o form */
 @media (max-width:497px) {
     #texto{ width: 300PX;}
+    .btn-mai, .btn-min, .btn-clear, .btn-prim{
+        width: 50px;
+        text-align: center;
+    }
 }
