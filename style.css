@@ -41,7 +41,6 @@ padding: 0;
 .buttons{
     padding: 20px;
     display: flex;
-
 }
 
 .btn-mai, .btn-min, .btn-clear, .btn-prim{
@@ -54,6 +53,8 @@ padding: 0;
     cursor: pointer;
     font-size: 20px;
     color: aliceblue;
+    margin-top: 5px;
+    margin-right: 5px;
 }
 body{
     width: 100%;
@@ -73,24 +74,29 @@ body{
         align-items: center;
     }  
 }
-/*              */
+/*       responsividade dos buttons para telas de 354px   */
 @media (max-width:354px) {
     .btn-mai, .btn-min, .btn-clear, .btn-prim{
         width: 50px;
     }
-}
 
+}
+/*      media query para 518px da tela diminuindo os buttons*/
 @media (max-width:518px) {
     .btn-mai, .btn-min, .btn-clear, .btn-prim{
         width: 100px;
     }
+    body{
+        width: 100%;
+    height: 100%;
+    }
 }
-/* Media query para o form */
+/* Media query para o form em 1080px */
 @media (max-width:1080PX) {
     #texto{ width: 600PX;}
 }
 
-/* Media query para o form */
+/* Media query para o form  e button em 497 px*/
 @media (max-width:497px) {
     #texto{ width: 300PX;}
     .btn-mai, .btn-min, .btn-clear, .btn-prim{
