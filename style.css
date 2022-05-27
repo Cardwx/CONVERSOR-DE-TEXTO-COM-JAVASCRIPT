@@ -30,6 +30,7 @@ padding: 0;
 #texto{
     display: flex;
     padding: 20px;
+    width: 900px;
     border-radius: 10px;
     outline: none;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -66,28 +67,28 @@ body{
 
 
 /*                      Otimização  responsiva      */
-@media   (max-width: 803px)  {
+@media   (max-width: 700px)  {
     .btn-mai, .btn-min, .btn-clear, .btn-prim{
-        width: 200px;
+        width: 100px;
     }
     #text-input{
         align-items: center;
     }  
 }
-/*       responsividade dos buttons para telas de 354px   */
-@media (max-width:354px) {
+/*       responsividade dos buttons para telas de 375px   */
+@media (max-width:375px) {
     .btn-mai, .btn-min, .btn-clear, .btn-prim{
         width: 50px;
     }
-
+    #texto{ width: 100px;}
 }
-/*      media query para 518px da tela diminuindo os buttons*/
-@media (max-width:518px) {
-    .btn-mai, .btn-min, .btn-clear, .btn-prim{
-        width: 100px;
-    }
+
+
+/*      media query para 600px da tela diminuindo os buttons*/
+@media (max-width:600px) {
+    #texto{ width: 50px;}
     body{
-        width: 100%;
+    width: 100%;
     height: 100%;
     }
 }
