@@ -2,7 +2,7 @@ const mai = document.querySelector('.btn-mai')
 const min = document.querySelector('.btn-min')
 const limpeza = document.querySelector('.btn-clear')
 const primeiro = document.querySelector('.btn-prim')
-
+const copiarTexto = document.querySelector('.btn-copy')   
 /**
  * Entrada das funções para conversão
  */
@@ -55,4 +55,12 @@ function  limpar(){
     document.querySelector('#texto').value = ' '
     /*      Focar input na primeira linha * */
     
+}
+               /*  FUNÇÃO COPIAR TEXTO utilizando API CLIP BOARD*/
+function copiar(){
+
+    const  texto = document.querySelector('#texto').value
+    navigator.clipboard.writeText(texto);
+  
+  alert('Texto copiado! ');
 }
