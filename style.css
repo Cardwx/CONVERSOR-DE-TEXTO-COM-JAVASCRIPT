@@ -70,10 +70,6 @@ body{
 
 /*                      Otimização  responsiva      */
 @media   (max-width: 700px)  {
-    .btn-mai, .btn-min, .btn-clear, .btn-prim, .btn-copy{
-        width: 100px;
-        font-size: 15px;
-    }
     #text-input{
         align-items: center;
     }  
@@ -99,6 +95,10 @@ body{
 /* Media query para o form em 1080px */
 @media (max-width:1080PX) {
     #texto{ width: 600PX;}
+    .btn-mai, .btn-min, .btn-clear, .btn-prim, .btn-copy{
+        width: 100px;
+        font-size: 15px;
+    }
 }
 
 /* Media query para o form  e button em 497 px*/
